@@ -19,14 +19,18 @@
   <section>
     <h4 id="rtext">Es hora de jugar!</h4>
     <div class="input-name">
-      <p>Ingresa tu nombre</p>
       <script>
         function showName(name) {
+          event.preventDefault()
           const rtext = document.querySelector("#rtext");
           rtext.innerHTML = name + ", es hora de jugar!";
         }
       </script>
-      <input type="text" onchange="showName(this.value)">
+      <form onsubmit="showName(text.value)">
+        <label for="name"></label>
+        <input type="text" name="text">
+        <button type="submit">Guardar</button>
+      </form>
     </div>
   </section>
   <script src="script.js"></script>
