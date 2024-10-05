@@ -1,3 +1,3 @@
-function nombreDelUsuario(){
-    console.log("hloa Mundo")
+function mostrarNombreDelUsuario(){
+  console.log("hloa Mundo")
 }
