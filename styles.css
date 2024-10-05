@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: azure;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+.input-name {
+  display: flex;
+  gap: 5px;
+}

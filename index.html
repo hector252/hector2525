@@ -1,48 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Héctor Ramos Colque">
-    <title>Fornite</title>
-</head>
-<body>
-    <h1>FORNITE</h1>
-    <section>
-        <h2>juego multijugador</h2>
-    </section>
-    <section>
-        <img id="imagen" class="claseimagen" src="https://i.ytimg.com/vi/J4EqEjdfg6U/maxresdefault.jpg" alt="la imagen es una imagen de batalla campal" > <img class="claseimagen" src="https://i.ytimg.com/vi/J4EqEjdfg6U/maxresdefault.jpg" alt="la imagen es una imagen de batalla campal" >
-    </section>
-<script src="./script.js"></script>
-<section>
-    
-<h4 id="rtext"></h4>
-</section>
-<style>
-    body {
-        background-color: azure;
-    }
-    h1 {
-        width: 100%;
-        text-align: center;
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 50px;
-    }
-    h2 {
-        font-size:xx-large;
-}
 
-#imagen {
-    width: 50%;
-}
-img {
-    width: 100%;
-}
-.claseimagen {
-    width: 70%;
-}
-</style>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Héctor Ramos Colque">
+  <link rel="stylesheet" href="styles.css">
+  <title>Fornite</title>
+</head>
+
+<body>
+  <h1>FORNITE</h1>
+  <section>
+    <h2>Juego multijugador</h2>
+    <img id="imagen" class="claseimagen" src="https://i.ytimg.com/vi/J4EqEjdfg6U/maxresdefault.jpg"
+      alt="la imagen es una imagen de batalla campal">
+  </section>
+  <section>
+    <h4 id="rtext">Es hora de jugar!</h4>
+    <div class="input-name">
+      <p>Ingresa tu nombre</p>
+      <script>
+        function showName(name) {
+          const rtext = document.querySelector("#rtext");
+          rtext.innerHTML = name + ", es hora de jugar!";
+        }
+      </script>
+      <input type="text" onchange="showName(this.value)">
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
 </html>
